@@ -1,6 +1,6 @@
 ### Traffic shapping in k8s using Istio ###
 
-You may want to traffic shaping due to variosu reasons
+You may want to traffic shaping due to various reasons
 - Resource allocation:  
 Developers can simulate various network conditions and bandwidth limitations, helping them test how applications perform under different scenarios.
 - Performance testing:  
