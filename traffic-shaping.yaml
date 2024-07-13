@@ -1,0 +1,31 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: myapp-virtualservice
+spec:
+  hosts:
+  - myapp-service
+  http:
+  - route:
+    - destination:
+        host: myapp-service
+        subset: v1
+      weight: 75
+    - destination:
+        host: myapp-service
+        subset: v2
+      weight: 25
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: myapp-destinationrule
+spec:
+  host: myapp-service
+  subsets:
+  - name: v1
+    labels:
+      version: v1
+  - name: v2
+    labels:
+      version: v2
