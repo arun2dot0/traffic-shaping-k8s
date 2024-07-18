@@ -15,6 +15,8 @@ slightly with your setup .
 _Note : I am not pulling the image and building it locally , this will be ideal for development
 testing as you don't want to be pulling from registry . However change the image pull behavior
 for production setups_ 
+![Screenshot 2024-07-13 at 4 36 49 PM](https://github.com/user-attachments/assets/ca0486bb-8fb5-4923-b738-8eddd797fce8)
+
 
 ### Steps ###
 
